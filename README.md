@@ -1,26 +1,26 @@
-# LAGAIL CONTRACTORS - HTML/CSS/JS + Sanity + Netlify
+# LAGAIL CONTRACTORS
 
-site/    the website (plain HTML, CSS, JavaScript)
-studio/  the Sanity admin where staff log in and add photos
+The `site/` folder contains the public website. The `studio/` folder contains the Sanity admin project.
 
-## 1. Try the site
-Open site/index.html (or use VS Code "Live Server"). It shows sample content until Sanity is connected.
+## Publish with GitHub Pages
 
-## 2. Set up Sanity (the admin)
-1. Create a free account and project at https://www.sanity.io/manage. Copy the **Project ID**.
-2. Paste it in 3 places: `studio/sanity.config.js`, `studio/sanity.cli.js` and `site/js/main.js` (sanityProjectId).
-3. In a terminal: `cd studio` then `npm install`, `npx sanity login`, `npx sanity deploy`.
-   It gives you an admin address like https://lagail-admin.sanity.studio - put it in `site/js/main.js` (studioUrl).
-4. In manage.sanity.io > your project > API > CORS origins, add your Netlify address (and http://localhost:5500 for testing).
-5. Log in to the studio and fill **Website Settings** (name, phones, email, address, WhatsApp).
+The workflow in `.github/workflows/pages.yml` deploys the contents of `site/` whenever a commit is pushed to `main`.
 
-## 3. Put the site on Netlify
-Upload this folder to GitHub, then in Netlify choose "Add new site > Import from Git" (publish folder `site` is already set in netlify.toml).
-Or drag the `site` folder onto https://app.netlify.com/drop.
+1. In the GitHub repository, open **Settings > Pages** and select **GitHub Actions** as the source.
+2. Push changes to `main`. Check the **Actions** tab for deployment progress and the Pages URL.
 
-## 4. Add pictures of your work
-Open the admin address > **Projects (Gallery)** > Create > add title, description, category and photo > **Publish**.
-It appears on the website automatically (no redeploy needed). Services work the same way.
+## Local preview
 
-## Enquiries
-The contact form uses Netlify Forms. See messages in Netlify > your site > Forms. Turn on email alerts there.
+Open `site/index.html` in a browser or use VS Code Live Server. Sample content is shown until Sanity is configured.
+
+## Set up Sanity
+
+1. Create a project at https://www.sanity.io/manage and copy its Project ID.
+2. Set the project ID in `studio/sanity.config.js`, `studio/sanity.cli.js`, and `site/js/main.js`.
+3. From `studio/`, run `npm install`, `npx sanity login`, and `npx sanity deploy`.
+4. Add the website URL to the project's CORS origins in Sanity Manage.
+5. In the deployed Studio, configure Website Settings and publish services and projects.
+
+## Contact form
+
+GitHub Pages is static hosting and does not process form submissions. The current contact form uses Netlify Forms, so it will need a separate form service to receive submissions when hosted on GitHub Pages. Phone, email, and WhatsApp contact links remain available.
