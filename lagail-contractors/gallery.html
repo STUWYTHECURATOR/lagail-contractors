@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Gallery | Lagail Contractors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.jpeg" alt="Lagail Contractors Logo">
+            <div class="logo-title">Lagail <span>Contractors</span></div>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-nav">Request Quote</a>
+        </nav>
+        <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+</header>
+<section class="page-banner">
+    <div class="container">
+        <h1>Completed Projects Gallery</h1>
+        <p>Filter by trade or click any project photograph to inspect our work.</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="Welding">Welding &amp; Steel</button>
+            <button class="filter-btn" data-filter="HVAC">Refrigeration &amp; AC</button>
+            <button class="filter-btn" data-filter="Electrical">Electrical &amp; Maintenance</button>
+        </div>
+        <div class="grid-3">
+            <div class="gallery-card" data-category="Welding" data-title="Ground-Mounted Steel Solar Structure" data-desc="Custom fabricated steel support frame and heavy-duty welding installation in Zambia.">
+                <span class="badge-cat">Welding &amp; Steel</span>
+                <img src="images/hero-bg.jpeg" alt="Steel Solar Mounting Structure">
+                <div class="service-box-body">
+                    <h3>Steel Solar Mounting Frame</h3>
+                    <p>Custom fabricated structural steel frame and field installation.</p>
+                </div>
+            </div>
+            <div class="gallery-card" data-category="HVAC" data-title="Corporate Office HVAC &amp; Refrigeration" data-desc="Multi-zone split and cassette air conditioning installation for a commercial office complex.">
+                <span class="badge-cat">Refrigeration &amp; AC</span>
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Office HVAC Installation">
+                <div class="service-box-body">
+                    <h3>Corporate Office HVAC Setup</h3>
+                    <p>Multi-zone split and cassette air conditioning installation for an office complex.</p>
+                </div>
+            </div>
+            <div class="gallery-card" data-category="Electrical" data-title="Commercial Distribution Board &amp; Wiring" data-desc="Three-phase panel upgrade, backup changeover switch, and full lighting installation.">
+                <span class="badge-cat">Electrical</span>
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electrical Distribution Board">
+                <div class="service-box-body">
+                    <h3>Commercial Panel &amp; Wiring</h3>
+                    <p>Three-phase panel upgrade, backup changeover switch, and lighting installation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">&times;</button>
+    <img id="lbImg" src="" alt="Project Preview">
+    <div class="lightbox-caption">
+        <h3 id="lbTitle" style="color:#f1c40f; margin-bottom:6px;"></h3>
+        <p id="lbDesc" style="color:#e5e7eb;"></p>
+    </div>
+</div>
+<footer>
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo-link" style="margin-bottom:15px;">
+                <img src="images/logo.jpeg" alt="Lagail Contractors Logo">
+                <div class="logo-title" style="color:#ffffff;">Lagail <span style="color:#f1c40f;">Contractors</span></div>
+            </a>
+            <p>Specialised in Plumbing, Electrical &amp; Refrigeration, Carpentry &amp; Joinery, Building, Painting &amp; General Maintenance. <em>Solution to your problems!</em></p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Projects Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="services.html">Plumbing &amp; Refrigeration</a></li>
+                <li><a href="services.html">Electrical Installations</a></li>
+                <li><a href="services.html">Carpentry &amp; Joinery</a></li>
+                <li><a href="services.html">Building, Painting &amp; Maintenance</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-user-tie" style="color:#f1c40f;"></i> Lazarous Phiri (Managing Director)</p>
+            <p><i class="fas fa-map-marker-alt" style="color:#f1c40f;"></i> P. O. Box 34935, Lusaka - Zambia</p>
+            <p><i class="fas fa-phone-alt" style="color:#f1c40f;"></i> +260 977 576244 / 0966 460907 / 0953 924734</p>
+            <p><i class="fas fa-envelope" style="color:#f1c40f;"></i> lagail406800@yahoo.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">&copy; 2026 Lagail Contractors. Solution to your problems! All Rights Reserved.</div>
+    </div>
+</footer>
+
+<a href="https://wa.me/260977576244?text=Hello%20Lagail%20Contractors%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
